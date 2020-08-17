@@ -306,6 +306,12 @@ body{background-color: #efefef;}
 	background-position: center center;
 	background-size: cover;
 	transition: .5s;
+	position: absolute;
+	content: '';
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
 }
 
 .bg-destaque:after{
@@ -373,35 +379,35 @@ body{background-color: #efefef;}
 }
 
 
-.destaque-um{
+.destaque-1{
 	grid-column: inicio-temp/fim-temp;
 	grid-row:inicio-destaque1/fim-destaque1 ;
 }
-.bg-destaque-um{
+.bg-destaque-1{
 	background-image: url(../img/destaques/destaque1.jpg);
 }
 
-.destaque-dois{
+.destaque-2{
 	grid-column: inicio-temp/fim-temp;
 	grid-row:inicio-destaque2/fim-destaque2 ;
 }
-.bg-destaque-dois{
+.bg-destaque-2{
 	background-image: url(../img/destaques/destaque2.jpg);
 }
 
-.destaque-tres{
+.destaque-3{
 	grid-column: inicio-temp/fim-temp;
 	grid-row:inicio-destaque3/fim-destaque3;
 }
-.bg-destaque-tres{
+.bg-destaque-3{
 	background-image: url(../img/destaques/destaque3.jpg);
 }
 
-.destaque-quatro{
+.destaque-4{
 	grid-column: inicio-temp/fim-temp;
 	grid-row:inicio-destaque4/fim-destaque4;
 }
-.bg-destaque-quatro{
+.bg-destaque-4{
 	background-image: url(../img/destaques/destaque4.jpg);
 }
 
@@ -540,43 +546,43 @@ body{background-color: #efefef;}
 		border-left: none;
 	}
 	.destaque .titles-destaque .title-subtitle-destaque h2{
-		font-size: .9em;
+		font-size: .8em;
 	}
 
 	.destaque .titles-destaque .title-subtitle-destaque p{
 		display: none;
 	}
 
-	.destaque-um{
+	.destaque-1{
 		grid-column: inicio-destaque1/fim-destaque1 ;
 		grid-row:inicio-destaques1-2/fim-destaques1-3-4 ;
 	}
-	.destaque-um .titles-destaque{
+	.destaque-1 .titles-destaque{
 		display: flex;
 		padding-bottom: 20px;
 	}
-	.destaque-um .titles-destaque .title-subtitle-destaque{
+	.destaque-1 .titles-destaque .title-subtitle-destaque{
 		border-left: 2px solid #00aaff;
 	
 	}
-	.destaque-um .titles-destaque .title-subtitle-destaque h2.title-destaque{
+	.destaque-1 .titles-destaque .title-subtitle-destaque h2.title-destaque{
 		margin-bottom: 10px;
 		font-size: 1.3em;
 	}
-	.destaque-um .titles-destaque .title-subtitle-destaque p{
+	.destaque-1 .titles-destaque .title-subtitle-destaque p{
 		display: block;
 		font-size: .9em;
 	}
 
-	.destaque-dois{
+	.destaque-2{
 		grid-column: inicio-destaques2-3/fim-destaques4-2;
 		grid-row:inicio-destaques1-2/fim-destaque2;
 	}
-	.destaque-tres{
+	.destaque-3{
 		grid-column: inicio-destaques2-3/fim-destaque3;
 		grid-row:inicio-destaques3-4/fim-destaques1-3-4;
 	}
-	.destaque-quatro{
+	.destaque-4{
 		grid-column: inicio-destaque4/fim-destaques4-2;
 		grid-row:inicio-destaques3-4/fim-destaques1-3-4;
 	}
