@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="author"					   content="José Aglailson">
+	<meta name="description"               content="Portal de Notícias de Ipuã e toda a região">
+	<meta property="og:url"                content="https://agladev.github.io/IpuaOnline/" />
+	<meta property="og:type"               content="Website" />
+	<meta property="og:title"              content="Ipuã Online" />
+	<meta property="og:description"        content="Portal de notícias de Ipuã e região" />
+	<meta property="og:image"              content="https://agladev.github.io/IpuaOnline/img/banner.png"/>
+	<meta property="og:image:width"        content="800">
+	<meta property="og:image:height"	   content="600">
+	<title>Principal</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Roboto:wght@300&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+	<script type="text/javascript" src="js/main.js"></script>
+	<link rel="icon" type="icon" href="img/icon.png">
+</head>
+<body>
+
+	<header class="container container-cabecalho">
+
+		<a href="#."><h1 id="logo">logo</h1></a>
+		
+		<div class="content-busca-btn-menu">
+
+			<form class="f-busca" action="#" method="get"><!--Só aparece em telas grandes-->
+				<input type="text" id="ipt-busca" placeholder="busca" >
+				<button type="submit"><i class="fas fa-search"></i></button>
+			</form>
+
+			<section class="btn-menu" id="btn-menu">
+				<div class="linha linha0"></div>
+				<div class="linha linha1"></div>
+				<div class="linha linha2"></div>
+			</section>
+		</div>
+
+		<nav class="content-menu " id="content-menu">
+			
+			<ul class="menu" id="menu">
+				
+				<!--MIDIAS SOCIAIS-->
+				<ul class="midias-sociais">
+					<li><a href="#" class="icon icon-fb"><i class="fab fa-facebook-square"></i></a></li>
+					<li><a href="#" class="icon icon-insta"><i class="fab fa-instagram"></i></a></li>
+					<li><a href="#" class="icon icon-yt"><i class="fab fa-youtube"></i></a></li>
+				</ul>
+				
+				<!--BUSCA ORGANICA-->
+				<div class="busca-organica">
+					<form>
+						<input type="text" name="ipt-busca" class="ipt-busca" placeholder="pesquise algo...">
+						<button class="btn-busca"><i class="fas fa-search"></i></button>
+					</form>
+				</div>
+				
+
+				<!--
+					ITENS DO MENU ADICIONADO
+					DINAMICAMENTE NO JS
+				
+				-->
+				<script>
+			
+					//MENU
+					const btnMenu = document.getElementById('btn-menu')
+					const contenMenu = document.getElementById('content-menu')
+					const menuLista = document.getElementById('menu')
+
+					const menu = new Menu(btnMenu,contenMenu)
+
+					menu.carregaItens(menuLista)
+					menu.toggleBtnSubmenu()
+
+					//MENU ->eventos de clique
+					contenMenu.addEventListener('click',(e)=>{
+					
+						if(e.target.id === 'content-menu'){
+							
+							menu.toggleMenu('btn-menu-toggle','content-menu-toggle')
+						}
+					
+					})
+
+					btnMenu.addEventListener('click',()=>{
+
+						menu.toggleMenu('btn-menu-toggle','content-menu-toggle')
+
+					
+					
+					})
+				
+				
+				</script>
+				<!--BTNS LOGIN\CADASTRO-->
+				<div class="content-login-cadastro">
+					<footer class="login-cadastro">
+						
+						<a href="#" id="btn-login">Entre</a>
+						
+						<a href="#" id="btn-cadastro">Cadastre-se</a>
+						
+					</footer>
+				</div>
+
+				
+
+			</ul>
+
+		</nav>
+
+	</header>
+
+	<main class="container-principal">
+
+		<section class="content-destaques">
+
+			<article class="destaque destaque-um">
+				<a href="#" style="height: 100%; display: block;">
+
+					<div class="bg-destaque bg-destaque-um">
+
+
+					</div>	
+					
+					<div class="titles-destaque">
+
+						<div class="data-categoria-destaque">
+							<span class="data">Há 3 horas</span>
+							<span class="categoria">Esporte</span>
+						</div>
+
+						<div class="title-subtitle-destaque">
+							<h2 class="title-destaque">Futebol em estadios pode voltar em pleno surto de COVID-19</h2>
+							<p class="subtitle-destaque">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique, assumenda?</p>
+						</div>
+
+					</div>
+
+				</a>
+			</article>
+
+			<article class="destaque destaque-dois">
+				<a href="#" style="height: 100%; display: block;">
+
+					<div class="bg-destaque bg-destaque-dois">
+
+
+					</div>	
+					
+					<div class="titles-destaque">
+
+						<div class="data-categoria-destaque">
+							<span class="data">Há 4 horas</span>
+							<span class="categoria">Saude</span>
+						</div>
+
+						<div class="title-subtitle-destaque">
+							<h2 class="title-destaque">Lorem ipsum dolor sit amet.</h2>
+							<p class="subtitle-destaque">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique, assumenda?</p>
+						</div>
+
+					</div>
+
+				</a>
+			</article>
+
+			<article class="destaque destaque-tres">
+				<a href="#" style="height: 100%; display: block;">
+
+					<div class="bg-destaque bg-destaque-tres">
+
+
+					</div>	
+					
+					<div class="titles-destaque">
+
+						<div class="data-categoria-destaque">
+							<span class="data">Há 1 hora</span>
+							<span class="categoria">Educação</span>
+						</div>
+
+						<div class="title-subtitle-destaque">
+							<h2 class="title-destaque">Lorem ipsum dolor sit amet.</h2>
+							<p class="subtitle-destaque">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique, assumenda?</p>
+						</div>
+
+					</div>
+
+				</a>
+			</article>
+
+			<article class="destaque destaque-quatro">
+				<a href="#" style="height: 100%; display: block;">
+
+					<div class="bg-destaque bg-destaque-quatro">
+
+
+					</div>	
+					
+					<div class="titles-destaque">
+
+						<div class="data-categoria-destaque">
+							<span class="data">Há 4 horas</span>
+							<span class="categoria">Politica</span>
+						</div>
+
+						<div class="title-subtitle-destaque">
+							<h2 class="title-destaque">Lorem ipsum dolor sit amet.</h2>
+							<p class="subtitle-destaque">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique, assumenda?</p>
+						</div>
+
+					</div>
+
+				</a>
+			</article>
+
+		</section>
+
+		<section class="container-slide-noticia-widgets">
+
+			<article class="content-slider">
+				<ul class="sliders">
+					<li class="item"></li>
+					<li class="item"></li>
+					<li class="item"></li>
+					<span class="btn-slider btn-prev"><i class="fas fa-chevron-left"></i></span>
+					<span class="btn-slider btn-next"><i class="fas fa-chevron-right"></i></span>
+				</ul>
+				<ol class="controls-slider">
+					<li><span class="control"></span></li>
+					<li><span class="control"></span></li>
+					<li><span class="control"></span></li>
+					<li><span class="control"></span></li>
+					
+					<li><span class="control"></span></li>
+				</ol>
+
+			</article>
+
+			<article class="content-noticias">
+				
+			</article>
+
+			<article class="content-widgets">
+				
+			</article>
+			
+		</section>
+
+	</main>
+
+</body>
+</html>
