@@ -428,9 +428,20 @@ body{background-color: #efefef;}
 	position: relative;
 	overflow: hidden;
 }
+.content-slider .link-publicidade{
+	width: 100%;
+	display: block;
+	text-align: right;
+	color: #4F4F4F;
+	font-size: .6em;
+}
+.content-slider .link-publicidade:hover{
+	text-decoration: underline;
+}
 .sliders{
 	height: 100%;
 	display: flex;
+	position: relative;
 }
 .sliders .item{
 	min-width: 100%;
