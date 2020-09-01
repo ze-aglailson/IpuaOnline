@@ -413,11 +413,11 @@ body{background-color: #efefef;}
 }
 
 /*Configurações do grid slider,noticias e widget*/
-.container-slide-noticia-widgets{
+.container-slider-noticia-widgets{
 	display: grid;
 	grid-template-columns: [inicio]30px[inicio-temp]1fr[fim-temp]30px[fim];
 	grid-template-rows: 
-		[inicio-content-slider]200px[fim-content-slider]30px
+		[inicio-content-slider]220px[fim-content-slider]30px
 		[inicio-content-noticias]auto[fim-content-noticias]30px
 		[inicio-content-widgets]500px[fim-content-widgets]
 	;
@@ -445,11 +445,31 @@ body{background-color: #efefef;}
 	display: flex;
 	position: relative;
 }
-.sliders .item{
+.slide{
 	min-width: 100%;
 	height: 100%;
 	background-color: #ccc;
 	display: block;
+	margin-right: 10px;
+}
+.link-slide{
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+.bg-slide{
+	width: 100%;
+	height: 100%;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.slide-01 .bg-slide{
+	background-image: url(../img/slider/slide01.jpg);
+}
+.slide-02 .bg-slide{
+	background-image: url(../img/slider/slide02.jpg);
 }
 .btn-slider{
 	display: block;
@@ -498,7 +518,8 @@ body{background-color: #efefef;}
 	border-radius: 100%;
 	background-color: #ccc;
 	display: block;
-	transition: background-color .3s;
+	transition: background-color .2s;
+	cursor: pointer;
 }
 .control:hover{
 	background-color: #333;
@@ -642,7 +663,7 @@ body{background-color: #efefef;}
 }
 
 @media screen and (min-width:680px){
-	.container-slide-noticia-widgets{
+	.container-slider-noticia-widgets{
 		
 		grid-template-columns: [inicio]4%[inicio-temp]1fr[fim-temp]4%[fim];
 		grid-template-rows: 
@@ -662,11 +683,11 @@ body{background-color: #efefef;}
 		display: block;
 	}
 
-	.container-slide-noticia-widgets{
+	.container-slider-noticia-widgets{
 		
 		grid-template-columns: [inicio]4%[inicio-slider-noticias]1fr repeat(6,10px 1fr)[fim-noticias]10px [inicio-widgets] 1fr repeat(4,10px 1fr)[fim-slider-widgets] 4%[fim];
 		grid-template-rows: 
-			[inicio-content-slider]250px[fim-content-slider]30px
+			[inicio-content-slider]300px[fim-content-slider]30px
 			[inicio-contents-noticias-widgets]400px[fim-contents-noticias-widgets]30px
 			
 		;
@@ -675,7 +696,15 @@ body{background-color: #efefef;}
 		grid-column:inicio-slider-noticias/fim-slider-widgets;
 		grid-row: inicio-content-slider/fim-content-slider;
 	}
-
+	.controls-slider li{padding: 5px}
+	.control{
+	width: 8px;
+	height: 8px;
+	border-radius: 100%;
+	background-color: #ccc;
+	display: block;
+	transition: background-color .3s;
+}
 	.content-noticias{
 		grid-column:inicio-slider-noticias/fim-noticias ;
 		grid-row:inicio-contents-noticias-widgets/fim-contents-noticias-widgets

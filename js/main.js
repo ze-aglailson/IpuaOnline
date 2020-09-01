@@ -26,6 +26,11 @@ function Menu(btn,content,menuLista){
 				subItens:[] 
 			},
 			{
+				nome:'Eventos',
+				link:'#',
+				subItens:[] 
+			},
+			{
 				nome:'Categorias',
 				link:'#',
 				subItens:[
@@ -283,3 +288,9 @@ function Destaques(){
 
 }
 
+
+function Slider(){
+
+	this.itens = []
+
+}
