@@ -418,7 +418,7 @@ body{background-color: #efefef;}
 	grid-template-columns: [inicio]30px[inicio-temp]1fr[fim-temp]30px[fim];
 	grid-template-rows: 
 		[inicio-content-slider]200px[fim-content-slider]30px
-		[inicio-content-noticias]400px[fim-content-noticias]30px
+		[inicio-content-noticias]auto[fim-content-noticias]30px
 		[inicio-content-widgets]500px[fim-content-widgets]
 	;
 }
@@ -521,6 +521,7 @@ body{background-color: #efefef;}
 	display: flex;
 	flex-direction: column;
 	background-color: #fff;
+	margin-bottom: 30px;
 }
 
 .div-titulo-subtitulo-noticia{

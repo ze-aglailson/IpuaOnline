@@ -277,8 +277,6 @@ function Destaques(){
 
 			content.appendChild(article)
 
-			console.log(article)
-
 		})
 
 	}
