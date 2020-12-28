@@ -434,7 +434,7 @@ body{background-color: #efefef;}
 	background-color: #FFFFFF;
 }
 .text-patrocinado{
-	padding: 5px;
+	padding: 3px;
 	display: flex;
 	justify-content: flex-end;
 }
@@ -455,7 +455,7 @@ body{background-color: #efefef;}
 	text-decoration: underline;
 }
 .wrapper{
-	height: 250px;
+	height: 300px;
 	display: flex;
 	position: relative;
 	overflow: hidden;
@@ -509,6 +509,9 @@ body{background-color: #efefef;}
 .slide-02 .bg-slide{
 	background-image: url(../img/slider/slide02.jpg);
 }
+.slide-03 .bg-slide{
+	background-image: url(../img/slider/slide03.jpg);
+}
 .btn-slider{
 	display: block;
 	color: #333;
@@ -544,10 +547,8 @@ body{background-color: #efefef;}
 	display: flex;
 	justify-content: center;
 	background-color: #FFFFFF;
-	position: absolute;
-	left: 0;
-	bottom: 0;
 	list-style: none;
+	padding: 3px;
 }
 .controls-slider li{padding: 2px}
 
