@@ -322,7 +322,7 @@ body{background-color: #efefef;}
 	left: 0;
 	right: 0;
 	bottom: 0;
-	background: linear-gradient(0deg,rgba(0,0,0,.6),rgba(0,0,0,.2) 40%,rgba(0,0,0,.2) 80%,rgba(0,0,0,.4));
+	background: linear-gradient(0deg,rgba(0,0,0,.9),rgba(0,0,0,.6) 40%,rgba(0,0,0,.4) 80%,rgba(0,0,0,.2));
 }
 
 .titles-destaque{
@@ -442,6 +442,7 @@ body{background-color: #efefef;}
 	color: rgb(136, 132, 132);
 	font-size: .8em;
 	cursor: pointer;
+	font-family: 'Open Sans' , sans-serif;
 }
 .text-patrocinado a:hover{text-decoration: underline;}
 .slider .link-publicidade{

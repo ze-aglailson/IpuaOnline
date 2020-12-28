@@ -124,9 +124,10 @@ function slide(wrapper, items, prev, next){
 }
 
 slide(slider, sliderItems,prev, next)
-	
 
 }
+
+
 
 function Menu(btn,content,menuLista){
 	this.content = content
@@ -410,6 +411,7 @@ function Destaques(){
 
 
 /*slider*/
+
 
 
 
