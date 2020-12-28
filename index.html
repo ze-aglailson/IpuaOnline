@@ -19,7 +19,7 @@
 	<script type="text/javascript" src="js/main.js"></script>
 	<link rel="icon" type="icon" href="img/icon.png">
 </head>
-<body>
+<body id="body">
 
 	<header class="container container-cabecalho">
 
@@ -125,32 +125,42 @@
 
 		<section class="container-slider-noticia-widgets">
 
-			<article class="content-slider">
+			<article id="slider" class="slider">
 				
 
-				<ul class="sliders">
+				<ul class="wrapper">
+					<div id="slides" class="slides">
+						<li class="slide slide-01">
+							<a href="#" class="link-slide">
+								<div class="bg-slide">
+									
 
-					<li class="slide slide-01">
-						<a href="#" class="link-slide">
-							<div class="bg-slide">
-								
+								</div>
+							</a>
+						</li>
 
-							</div>
-						</a>
-					</li>
+						<li class="slide slide-02">
+							<a href="#" class="link-slide">
+								<div class="bg-slide">
+									
 
-					<li class="slide slide-02">
-						<a href="#" class="link-slide">
-							<div class="bg-slide">
-								
+								</div>
+							</a>
+						</li>
+						<li class="slide slide-02">
+							<a href="#" class="link-slide">
+								<div class="bg-slide">
+									
 
-							</div>
-						</a>
-					</li>
+								</div>
+							</a>
+						</li>
 
-					<span class="btn-slider btn-prev"><i class="fas fa-chevron-left"></i></span>
-					<span class="btn-slider btn-next"><i class="fas fa-chevron-right"></i></span>
+					</div>
+
 				</ul>
+				<span id="btn-prev" class="btn-slider btn-prev"><i class="fas fa-chevron-left"></i></span>
+				<span id="btn-next" class="btn-slider btn-next"><i class="fas fa-chevron-right"></i></span>
 
 				<ol class="controls-slider">
 					<li><span class="control"></span></li>
