@@ -38,7 +38,7 @@ function slide(wrapper, items, prev, next){
 	//Evento de toque
 	items.addEventListener('touchstart', dragStart)
 	items.addEventListener('touchend', dragEnd)
-	items.addEventListener('touchmov', dragAction)
+	items.addEventListener('touchmove', dragAction)
 
 	//Eventos de clique
 	prev.addEventListener('click', function(){ shiftSlide(-1)})
