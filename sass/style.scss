@@ -471,7 +471,7 @@ body{background-color: #efefef;}
 	width: 10000px;
 }
 .slides.shifting{
-	transition: left .5s ease-out;
+	transition: left .3s ease-out;
 }
 .slide{
 	min-width: 100%;
@@ -498,11 +498,6 @@ body{background-color: #efefef;}
 	background-repeat: no-repeat;
 }
 
-
-.slider.loaded{
-	.slide:nth-child(2),
-	.slide:nth-child(4){background-image: url(../img/slider/slide02.jpg)}
-}
 
 
 .slide-01 .bg-slide{
