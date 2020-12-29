@@ -456,7 +456,7 @@ body {
   width: 10000px; }
 
 .slides.shifting {
-  transition: left .2s ease-out; }
+  transition: left .5s ease-out; }
 
 .slide {
   min-width: 100%;
