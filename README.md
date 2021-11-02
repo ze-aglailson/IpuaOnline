@@ -1,4 +1,4 @@
-# Postal de noticias completo
+# Portal de noticias completo
 * Status
   * Em Andamento
 * Preview
