@@ -39,7 +39,7 @@ body {
 }
 .container-principal .section .box-titles .title {
   text-transform: uppercase;
-  color: #DA4167;
+  color: #3c4e64;
   margin-bottom: 10px;
   font-weight: bold;
   font-size: 14px;
@@ -159,6 +159,42 @@ body {
   transition: 0.5s;
   overflow: hidden;
 }
+.content-menu .menu-principal .ul-items-midia {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 30px;
+  border-top: 1px solid #f7f4f4;
+}
+.content-menu .menu-principal .ul-items-midia li.item {
+  flex: 1;
+}
+.content-menu .menu-principal .ul-items-midia li.item a {
+  display: block;
+  text-align: center;
+  width: 100%;
+  padding: 5px 0;
+  font-size: 1.2em;
+  border-bottom: 2px solid #fff;
+}
+.content-menu .menu-principal .ul-items-midia li.item .icon-facebook {
+  color: #4164ac;
+}
+.content-menu .menu-principal .ul-items-midia li.item .icon-facebook:hover {
+  border-bottom: 2px solid #4164ac;
+}
+.content-menu .menu-principal .ul-items-midia li.item .icon-instagram {
+  color: #f24d57;
+}
+.content-menu .menu-principal .ul-items-midia li.item .icon-instagram:hover {
+  border-bottom: 2px solid #f24d57;
+}
+.content-menu .menu-principal .ul-items-midia li.item .icon-youtube {
+  color: #e93c25;
+}
+.content-menu .menu-principal .ul-items-midia li.item .icon-youtube:hover {
+  border-bottom: 2px solid #e93c25;
+}
 .content-menu .menu-principal .ul-items-menu {
   width: 100%;
   border-top: 1px solid #f7f4f4;
@@ -198,7 +234,7 @@ body {
 
 @media screen and (min-width: 990px) {
   .cabecalho-branco .content-logo-btn-menu .content-menu .menu-principal .ul-items-menu li.item a {
-    color: #333333;
+    color: #3c4e64;
   }
 
   .container-cabecalho .content-logo-btn-menu .btn-menu {
@@ -220,6 +256,9 @@ body {
     padding: 0;
     transition: none;
   }
+  .content-menu .menu-principal .ul-items-midia {
+    display: none;
+  }
   .content-menu .menu-principal .ul-items-menu {
     padding: 0;
     height: 100%;
@@ -230,10 +269,10 @@ body {
     width: auto;
   }
   .content-menu .menu-principal .ul-items-menu li.item a {
-    color: #FFFFFF;
+    color: #3c4e64;
   }
   .content-menu .menu-principal .ul-items-menu li.item:hover a {
-    color: #FFFFFF;
+    color: #333;
     background-color: transparent;
     text-decoration: underline;
   }
