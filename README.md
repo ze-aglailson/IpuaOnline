@@ -1,8 +1,8 @@
-# Site One Page
+# Postal de noticias completo
 * Status
   * Em Andamento
 * Preview
-  * https://ze-aglailson.github.io/Site-one-page/
+  * https://ze-aglailson.github.io/IpuaOnline/
 * Skills
   * HTML 
   * CSS  
