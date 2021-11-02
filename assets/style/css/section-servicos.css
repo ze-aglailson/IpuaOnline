@@ -1,0 +1,74 @@
+/* #ff6b81 */
+.section-servicos {
+  grid-column: inicio-temp/fim-temp;
+  grid-row: inicio-section-servicos/fim-section-servicos;
+  background-color: #fff;
+}
+.section-servicos .box-servicos {
+  width: 100%;
+  display: flex;
+}
+.section-servicos .box-servicos ul.servicos {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.section-servicos .box-servicos ul.servicos li.servico {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 25px;
+  background: #FFFFFF;
+  cursor: pointer;
+}
+.section-servicos .box-servicos ul.servicos li.servico .box-icon-servico {
+  min-height: 150px;
+  max-height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #FFFFFF;
+  border-radius: 3px 3px 0 0;
+  padding: 5px;
+  overflow: hidden;
+}
+.section-servicos .box-servicos ul.servicos li.servico .box-icon-servico .icon {
+  width: 80%;
+  color: #fff;
+}
+.section-servicos .box-servicos ul.servicos li.servico .box-title-descricao-acao {
+  padding: 5px 15px;
+  flex: 1;
+}
+.section-servicos .box-servicos ul.servicos li.servico .box-title-descricao-acao h4.title-servico {
+  font-size: 14px;
+  color: #333333;
+}
+.section-servicos .box-servicos ul.servicos li.servico .box-title-descricao-acao p.descricao-servico {
+  color: #575353;
+  font-size: 14px;
+}
+
+@media screen and (min-width: 760px) {
+  .section-servicos .box-servicos ul.servicos {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .section-servicos .box-servicos ul.servicos li.servico {
+    width: 48%;
+  }
+}
+@media screen and (min-width: 760px) {
+  .section-servicos .box-servicos ul.servicos {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: center;
+  }
+  .section-servicos .box-servicos ul.servicos li.servico {
+    width: 32%;
+  }
+}
+
+/*# sourceMappingURL=section-servicos.css.map */

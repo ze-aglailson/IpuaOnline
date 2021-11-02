@@ -1,0 +1,51 @@
+/* #ff6b81 */
+.container-principal {
+  position: relative;
+  display: grid;
+  grid-template-columns: [inicio-left] 12px [inicio-temp] 1fr repeat(12, 10px 1fr) [fim-temp] 12px [fim-rigth];
+  grid-template-rows: [inicio-section-home] 100vh [fim-section-home] 0px [inicio-section-contato] min(100vh) [fim-section-contato] 0px;
+}
+.container-principal .section {
+  padding: 0 5%;
+}
+.container-principal .section .box-titles {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 30px 0;
+}
+.container-principal .section .box-titles .title {
+  text-transform: uppercase;
+  color: #DA4167;
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-size: 14px;
+}
+.container-principal .section .box-titles .subtitle {
+  text-align: center;
+  color: #333333;
+  font-size: 14px;
+  padding: 0 15px;
+}
+
+.contente-btn-volta-topo {
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+}
+.contente-btn-volta-topo .btn-volta-top {
+  padding: 8px 10px;
+  border: 1px solid #FFFFFF;
+  cursor: pointer;
+  background-color: #00AAFF;
+  color: #FFFFFF;
+  border-radius: 3px;
+  display: none;
+}
+.contente-btn-volta-topo .btn-volta-top-visivel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*# sourceMappingURL=grid-principal.css.map */
