@@ -195,9 +195,29 @@ body {
 .content-menu .menu-principal .ul-items-midia li.item .icon-youtube:hover {
   border-bottom: 2px solid #e93c25;
 }
+.content-menu .menu-principal .form-busca {
+  width: 100%;
+  display: flex;
+  padding: 20px;
+  padding-bottom: 0;
+  border-top: 1px solid #f7f4f4;
+}
+.content-menu .menu-principal .form-busca #ipt-busca {
+  padding: 6px;
+  border: 1px solid #eee;
+  outline: none;
+  flex: 1;
+  font-size: 12px;
+}
+.content-menu .menu-principal .form-busca #btn-nusca {
+  padding: 6px 10px;
+  background-color: #333;
+  color: #FFF;
+  cursor: pointer;
+  border: none;
+}
 .content-menu .menu-principal .ul-items-menu {
   width: 100%;
-  border-top: 1px solid #f7f4f4;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -210,7 +230,7 @@ body {
 .content-menu .menu-principal .ul-items-menu li.item a {
   width: 100%;
   display: block;
-  padding: 5px 30px;
+  padding: 5px 20px;
   font-size: 0.9em;
   color: #333333;
 }
