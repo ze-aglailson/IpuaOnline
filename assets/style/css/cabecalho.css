@@ -82,11 +82,14 @@
 .content-menu .menu-principal {
   width: 270px;
   height: 100%;
+  max-height: 100vh;
   background-color: #FFFFFF;
   transform: translateX(-50%);
   transition: 0.5s;
   overflow: hidden;
-  position: relative;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
 }
 .content-menu .menu-principal .form-busca {
   width: 100%;
@@ -116,6 +119,8 @@
   justify-content: center;
   align-items: flex-start;
   padding-top: 20px;
+  flex: 1;
+  overflow-x: scroll;
 }
 .content-menu .menu-principal .ul-items-menu li.item {
   width: 100%;
@@ -137,9 +142,7 @@
   justify-content: space-between;
   padding: 0 20px;
   border-top: 1px solid #f7f4f4;
-  position: absolute;
-  left: 0;
-  bottom: 0;
+  align-self: flex-end;
 }
 .content-menu .menu-principal .ul-items-midia li.item {
   flex: 1;
@@ -148,7 +151,7 @@
   display: block;
   width: 100%;
   padding: 5px 0;
-  font-size: 1.2em;
+  font-size: 1.4em;
   text-align: center;
 }
 .content-menu .menu-principal .ul-items-midia li.item .icon-facebook {
