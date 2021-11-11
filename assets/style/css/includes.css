@@ -212,7 +212,7 @@ body {
   padding: 0 20px;
   border-top: 1px solid #f7f4f4;
   align-self: flex-end;
-  position: absolute;
+  position: fixed;
   left: 0;
   bottom: 0;
   background-color: #FFF;
