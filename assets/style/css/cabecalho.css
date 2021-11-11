@@ -58,6 +58,9 @@
 .container-cabecalho .content-logo-btn-menu .btn-menu-aberto {
   justify-content: center;
 }
+.container-cabecalho .content-logo-btn-menu .btn-menu-aberto .linha-btn {
+  background-color: #FFF;
+}
 .container-cabecalho .content-logo-btn-menu .btn-menu-aberto .linha-btn-2 {
   margin-top: -4px;
   transform: translateX(-100%);
