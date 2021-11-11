@@ -160,12 +160,13 @@ body {
   overflow: hidden;
   display: flex;
   flex-direction: column;
+  position: relative;
 }
 .content-menu .menu-principal .form-busca {
   width: 100%;
   display: flex;
   padding: 20px;
-  padding-bottom: 0;
+  padding-bottom: 10px;
   border-top: 1px solid #f7f4f4;
 }
 .content-menu .menu-principal .form-busca #ipt-busca {
@@ -175,7 +176,7 @@ body {
   flex: 1;
   font-size: 12px;
 }
-.content-menu .menu-principal .form-busca #btn-nusca {
+.content-menu .menu-principal .form-busca #btn-busca {
   padding: 6px 10px;
   background-color: #333;
   color: #FFF;
@@ -188,7 +189,7 @@ body {
   align-items: flex-start;
   padding-top: 20px;
   flex: 1;
-  overflow-x: scroll;
+  overflow-y: auto;
 }
 .content-menu .menu-principal .ul-items-menu li.item {
   width: 100%;
@@ -211,6 +212,10 @@ body {
   padding: 0 20px;
   border-top: 1px solid #f7f4f4;
   align-self: flex-end;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background-color: #FFF;
 }
 .content-menu .menu-principal .ul-items-midia li.item {
   flex: 1;
@@ -256,8 +261,7 @@ body {
   .container-cabecalho .content-logo-btn-menu .btn-menu {
     display: none;
   }
-
-  .content-menu {
+  .container-cabecalho .content-logo-btn-menu .content-menu {
     height: 100%;
     width: auto;
     position: relative;
@@ -265,29 +269,51 @@ body {
     background-color: inherit;
     transition: none;
   }
-  .content-menu .menu-principal {
+  .container-cabecalho .content-logo-btn-menu .content-menu .menu-principal {
     width: auto;
     background-color: transparent;
     transform: none;
     padding: 0;
     transition: none;
+    flex-direction: row;
+    align-items: center;
   }
-  .content-menu .menu-principal .ul-items-midia {
+  .container-cabecalho .content-logo-btn-menu .content-menu .menu-principal .form-busca {
+    width: auto;
+    align-items: center;
+    padding: 0;
+  }
+  .container-cabecalho .content-logo-btn-menu .content-menu .menu-principal .form-busca #ipt-busca {
+    padding: 5px;
+    border-radius: 3px 0 0 3px;
+    background-color: #eee;
+    color: #6a6464;
+    font-size: 12;
+  }
+  .container-cabecalho .content-logo-btn-menu .content-menu .menu-principal .form-busca #btn-busca {
+    padding: 5px 8px;
+    color: #6a6464;
+    background-color: #eee;
+    border-radius: 0 3px 3px 0;
+    cursor: pointer;
+  }
+  .container-cabecalho .content-logo-btn-menu .content-menu .menu-principal .ul-items-midia {
     display: none;
   }
-  .content-menu .menu-principal .ul-items-menu {
+  .container-cabecalho .content-logo-btn-menu .content-menu .menu-principal .ul-items-menu {
     padding: 0;
     height: 100%;
     flex-direction: row;
     border: none;
+    overflow-y: hidden;
   }
-  .content-menu .menu-principal .ul-items-menu li.item {
+  .container-cabecalho .content-logo-btn-menu .content-menu .menu-principal .ul-items-menu li.item {
     width: auto;
   }
-  .content-menu .menu-principal .ul-items-menu li.item a {
+  .container-cabecalho .content-logo-btn-menu .content-menu .menu-principal .ul-items-menu li.item a {
     color: #3c4e64;
   }
-  .content-menu .menu-principal .ul-items-menu li.item:hover a {
+  .container-cabecalho .content-logo-btn-menu .content-menu .menu-principal .ul-items-menu li.item:hover a {
     color: #333;
     background-color: transparent;
     text-decoration: underline;
