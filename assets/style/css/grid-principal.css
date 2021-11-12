@@ -1,9 +1,11 @@
+@charset "UTF-8";
 /* #ff6b81 */
 .container-principal {
   position: relative;
   display: grid;
   grid-template-columns: [inicio-left] 12px [inicio-temp] 1fr repeat(12, 10px 1fr) [fim-temp] 12px [fim-rigth];
-  grid-template-rows: [inicio-section-home] 100vh [fim-section-home] 0px [inicio-section-contato] min(100vh) [fim-section-contato] 0px;
+  grid-template-rows: [inicio-content-home] auto [fim-content-home] 0px [inicio-content-coringa] min(100vh) [fim-content-coringa] 0px;
+  /* O grid column e row do content da página atual é definido no seu determinado arquivo css */
 }
 .container-principal .section {
   padding: 0 5%;
@@ -26,6 +28,10 @@
   color: #333333;
   font-size: 14px;
   padding: 0 15px;
+}
+.container-principal .content-coringa {
+  grid-column: inicio-left/fim-rigth;
+  grid-row: inicio-content-coringa/fim-content-coringa;
 }
 
 .contente-btn-volta-topo {
