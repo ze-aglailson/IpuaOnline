@@ -1,6 +1,6 @@
 /* #ff6b81 */
 .content-home {
-  grid-column: inicio-left/fim-rigth;
+  grid-column: inicio-temp/fim-temp;
   grid-row: inicio-content-home/fim-content-home;
   display: grid;
   grid-template-columns: [inicio-left] 12px [inicio-temp] 1fr repeat(12, 10px 1fr) [fim-temp] 12px [fim-rigth];
