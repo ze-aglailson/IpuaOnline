@@ -70,8 +70,8 @@
     grid-column: inicio-left/fim-rigth;
     grid-row: inicio-content-vitrine-destaques/fim-content-vitrine-destaques;
     display: grid;
-    grid-template-columns: [inicio-left] 12px [inicio-temp] 1fr repeat(8, 10px 1fr) [fim-destaque1] 6px [inicio-destaques2-3] 1fr repeat(3, 10px 1fr) [fim-destaque3] 6px [inicio-destaque4] 1fr repeat(3, 10px 1fr) [fim-temp] 12px [fim-rigth];
-    grid-template-rows: [inicio-destaques1-2] 200px [fim-destaque2] 6px [inicio-destaques3-4] 200px [fim-destaques1-3-4];
+    grid-template-columns: [inicio-left] 12px [inicio-temp] 1fr repeat(8, 10px 1fr) [fim-destaque1] 3px [inicio-destaques2-3] 1fr repeat(3, 10px 1fr) [fim-destaque3] 3px [inicio-destaque4] 1fr repeat(3, 10px 1fr) [fim-temp] 12px [fim-rigth];
+    grid-template-rows: [inicio-destaques1-2] 190px [fim-destaque2] 3px [inicio-destaques3-4] 190px [fim-destaques1-3-4];
     margin-top: 50px;
   }
   .content-home .section-home .content-vitrine-destaques .destaque-1 {
