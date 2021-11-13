@@ -481,7 +481,6 @@ body {
   padding: 0 5px;
   display: flex;
   justify-content: space-between;
-  align-items: center;
 }
 .content-home .section-home .content-slider-principal .box-header-slider .texto-patrocinado {
   font-size: 10px;
@@ -493,8 +492,9 @@ body {
   text-decoration: underline;
 }
 .content-home .section-home .content-slider-principal .box-header-slider .btn-infos {
-  padding: 5px 0;
   width: 16px;
+  display: flex;
+  align-items: center;
 }
 .content-home .section-home .content-slider-principal .box-header-slider .btn-infos .icons-circles {
   width: 100%;
