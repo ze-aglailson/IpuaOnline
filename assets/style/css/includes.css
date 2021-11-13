@@ -375,7 +375,7 @@ body {
   grid-row: inicio-content-vitrine-destaques/fim-content-vitrine-destaques;
   display: grid;
   grid-template-columns: [inicio-left] 12px [inicio-temp] 1fr repeat(12, 10px 1fr) [fim-temp] 12px [fim-rigth];
-  grid-template-rows: [inicio-destaque1] 150px [fim-destaque1] 10px [inicio-destaque2] 110px [fim-destaque2] 10px [inicio-destaque3] 110px [fim-destaque3] 10px [inicio-destaque4] 110px [fim-destaque4] 10px;
+  grid-template-rows: [inicio-destaque1] 150px [fim-destaque1] 10px [inicio-destaque2] 120px [fim-destaque2] 10px [inicio-destaque3] 120px [fim-destaque3] 10px [inicio-destaque4] 120px [fim-destaque4] 10px;
   margin-top: 50px;
 }
 .content-home .section-home .content-vitrine-destaques .destaque:hover .background-destaque {
