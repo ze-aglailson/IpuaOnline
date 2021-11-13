@@ -493,6 +493,7 @@ body {
   text-decoration: underline;
 }
 .content-home .section-home .content-slider-principal .box-header-slider .btn-infos {
+  padding: 5px 0;
   width: 16px;
 }
 .content-home .section-home .content-slider-principal .box-header-slider .btn-infos .icons-circles {
