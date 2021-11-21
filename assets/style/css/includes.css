@@ -362,7 +362,7 @@ body {
   grid-row: inicio-content-home/fim-content-home;
   display: grid;
   grid-template-columns: [inicio-left] 12px [inicio-temp] 1fr repeat(12, 10px 1fr) [fim-temp] 12px [fim-rigth];
-  grid-template-rows: [inicio-content-vitrine-destaques] auto [fim-content-vitrine-destaques] 10px [inicio-content-slider-principal] 200x [fim-slider-principal] 10px [inicio-content-noticias] 100px [fim-content-noticias] 10px [inicio-content-widgets] 100px [fim-content-widgets] 10px;
+  grid-template-rows: [inicio-content-vitrine-destaques] auto [fim-content-vitrine-destaques] 10px [inicio-content-slider-principal] 200px [fim-slider-principal] 10px [inicio-content-noticias] 100px [fim-content-noticias] 10px [inicio-content-widgets] 100px [fim-content-widgets] 10px;
 }
 .content-home .section-home .content {
   background-color: #333;
