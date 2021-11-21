@@ -89,7 +89,7 @@
 .content-home .section-home .content-vitrine-destaques .destaque .informacoes-destaque .box-title-subtitle {
   display: flex;
   flex-direction: column;
-  padding-left: 8px;
+  padding: 8px;
 }
 .content-home .section-home .content-vitrine-destaques .destaque .informacoes-destaque .box-title-subtitle .titulo-destaque {
   color: #FFF;
@@ -123,6 +123,8 @@
 .content-home .section-home .content-slider-principal {
   grid-column: inicio-left/fim-rigth;
   grid-row: inicio-content-slider-principal/fim-slider-principal;
+  display: flex;
+  flex-direction: column;
 }
 .content-home .section-home .content-slider-principal .box-header-slider {
   width: 100%;
@@ -144,6 +146,7 @@
   display: flex;
   align-items: center;
   position: relative;
+  cursor: pointer;
 }
 .content-home .section-home .content-slider-principal .box-header-slider .btn-infos .icons-circles {
   width: 100%;
@@ -161,8 +164,8 @@
   margin: 0 2px;
 }
 .content-home .section-home .content-slider-principal .box-header-slider .btn-infos .box-infos {
-  width: 70px;
-  height: 50px;
+  width: 150px;
+  height: 80px;
   background: #FFF;
   border: 1px solid #CCC;
   position: absolute;
@@ -176,6 +179,56 @@
 }
 .content-home .section-home .content-slider-principal .box-header-slider .btn-infos:hover .box-infos {
   display: flex;
+}
+.content-home .section-home .content-slider-principal .slider {
+  display: inline-flex;
+  overflow: hidden;
+  transform: translateX(0);
+  transition: transform 0.3s ease-out;
+  cursor: grab;
+  flex: 1;
+}
+.content-home .section-home .content-slider-principal .slider .slide {
+  max-height: 100%;
+  width: 100%;
+  position: relative;
+  user-select: none;
+}
+.content-home .section-home .content-slider-principal .slider .slide .background-slide {
+  width: 100%;
+  height: 100%;
+  background-position: center center;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: #FFF;
+}
+.content-home .section-home .content-slider-principal .slider .slide .informacoes-slide {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 5px;
+}
+.content-home .section-home .content-slider-principal .slider .slide .informacoes-slide .box-btn-saiba-mais {
+  display: flex;
+  justify-content: flex-end;
+}
+.content-home .section-home .content-slider-principal .slider .slide .informacoes-slide .box-btn-saiba-mais .btn-saiba-mais {
+  background-color: #0af;
+  font-size: 0.65em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4px 6px;
+  color: #FFF;
 }
 .content-home .section-home .content-noticias {
   grid-column: inicio-left/fim-rigth;
@@ -197,6 +250,21 @@
     grid-template-columns: [inicio-left] 12px [inicio-temp] 1fr repeat(8, 10px 1fr) [fim-destaque1] 3px [inicio-destaques2-3] 1fr repeat(3, 10px 1fr) [fim-destaque3] 3px [inicio-destaque4] 1fr repeat(3, 10px 1fr) [fim-temp] 12px [fim-rigth];
     grid-template-rows: [inicio-destaques1-2] 190px [fim-destaque2] 3px [inicio-destaques3-4] 190px [fim-destaques1-3-4];
     margin-top: 50px;
+  }
+  .content-home .section-home .content-vitrine-destaques .destaque:first-child .informacoes-destaque {
+    justify-content: flex-start;
+  }
+  .content-home .section-home .content-vitrine-destaques .destaque:first-child .informacoes-destaque .box-title-subtitle {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    border-left: none;
+  }
+  .content-home .section-home .content-vitrine-destaques .destaque:first-child .informacoes-destaque .box-title-subtitle .titulo-destaque {
+    font-size: 1.8em;
+  }
+  .content-home .section-home .content-vitrine-destaques .destaque .informacoes-destaque {
+    padding: 0 0 4% 4%;
   }
   .content-home .section-home .content-vitrine-destaques .destaque:nth-child(2) .informacoes-destaque .box-title-subtitle .subtitle-destaque, .content-home .section-home .content-vitrine-destaques .destaque:nth-child(3) .informacoes-destaque .box-title-subtitle .subtitle-destaque, .content-home .section-home .content-vitrine-destaques .destaque:nth-child(4) .informacoes-destaque .box-title-subtitle .subtitle-destaque {
     display: none;
