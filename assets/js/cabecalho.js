@@ -155,7 +155,7 @@ window.addEventListener('load', function(){
     //Muda a cor do cabecalho quando a página é scrollada
     function mudaCorCabecalho(posicaoScrollAtual){
 
-        if(posicaoScrollAtual >= alturaCabecalho){
+        if(posicaoScrollAtual >= alturaCabecalho/2){
 
             cabecalhoBranco = true
             cabecalho.classList.add('cabecalho-branco')
