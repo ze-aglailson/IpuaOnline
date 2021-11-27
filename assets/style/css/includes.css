@@ -83,20 +83,36 @@ body {
     grid-template-rows: [inicio-content-home] auto [fim-content-home] 0px [inicio-content-coringa] min(100vh) [fim-content-coringa] 0px;
   }
 }
+@media screen and (min-width: 460px) {
+  .container-principal {
+    grid-template-columns: [inicio-left] 8% [inicio-temp] 1fr repeat(12, 10px 1fr) [fim-temp] 8% [fim-rigth];
+  }
+}
 @media screen and (min-width: 520px) {
   .container-principal {
     position: relative;
     display: grid;
-    grid-template-columns: [inicio-left] 2% [inicio-temp] 1fr repeat(12, 10px 1fr) [fim-temp] 2% [fim-rigth];
+    grid-template-columns: [inicio-left] 10% [inicio-temp] 1fr repeat(12, 10px 1fr) [fim-temp] 10% [fim-rigth];
     grid-template-rows: [inicio-content-home] auto [fim-content-home] 0px [inicio-content-coringa] min(100vh) [fim-content-coringa] 0px;
+  }
+}
+@media screen and (min-width: 581px) {
+  .container-principal {
+    grid-template-columns: [inicio-left] 2% [inicio-temp] 1fr repeat(12, 10px 1fr) [fim-temp] 2% [fim-rigth];
   }
 }
 @media screen and (min-width: 920px) {
   .container-principal {
+    margin: 0 auto;
     position: relative;
     display: grid;
     grid-template-columns: [inicio-left] 6% [inicio-temp] 1fr repeat(12, 10px 1fr) [fim-temp] 6% [fim-rigth];
     grid-template-rows: [inicio-content-home] auto [fim-content-home] 0px [inicio-content-coringa] min(100vh) [fim-content-coringa] 0px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .container-principal {
+    grid-template-columns: [inicio-left] 13% [inicio-temp] 1fr repeat(12, 10px 1fr) [fim-temp] 13% [fim-rigth];
   }
 }
 .paraliza-body {
@@ -284,6 +300,11 @@ body {
   transition: 0.3s;
 }
 
+@media screen and (min-width: 920px) {
+  .container-cabecalho {
+    padding: 0 6%;
+  }
+}
 @media screen and (min-width: 990px) {
   .cabecalho-branco .content-logo-btn-menu .content-menu .menu-principal .ul-items-menu li.item a {
     color: #3c4e64;
@@ -348,6 +369,11 @@ body {
     color: #333;
     background-color: transparent;
     text-decoration: underline;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .container-cabecalho {
+    padding: 0 13%;
   }
 }
 .content-home {
@@ -590,7 +616,7 @@ body {
   grid-row: inicio-content-widgets/fim-content-widgets;
 }
 
-@media screen and (min-width: 520px) {
+@media screen and (min-width: 580px) {
   .content-home .section-home {
     grid-template-rows: [inicio-content-vitrine-destaques] auto [fim-content-vitrine-destaques] 40px [inicio-content-slider-principal] 150px [fim-slider-principal] 10px [inicio-content-noticias] 100px [fim-content-noticias] 10px [inicio-content-widgets] 100px [fim-content-widgets] 10px;
   }
@@ -601,24 +627,6 @@ body {
     grid-template-columns: [inicio-left] 12px [inicio-temp] 1fr repeat(8, 10px 1fr) [fim-destaque1] 3px [inicio-destaques2-3] 1fr repeat(3, 10px 1fr) [fim-destaque3] 3px [inicio-destaque4] 1fr repeat(3, 10px 1fr) [fim-temp] 12px [fim-rigth];
     grid-template-rows: [inicio-destaques1-2] 190px [fim-destaque2] 3px [inicio-destaques3-4] 190px [fim-destaques1-3-4];
     margin-top: 50px;
-  }
-  .content-home .section-home .content-vitrine-destaques .destaque:first-child .informacoes-destaque {
-    justify-content: flex-start;
-  }
-  .content-home .section-home .content-vitrine-destaques .destaque:first-child .informacoes-destaque .box-title-subtitle {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    border-left: none;
-  }
-  .content-home .section-home .content-vitrine-destaques .destaque:first-child .informacoes-destaque .box-title-subtitle .titulo-destaque {
-    font-size: 1.8em;
-  }
-  .content-home .section-home .content-vitrine-destaques .destaque .informacoes-destaque {
-    padding: 0 0 4% 4%;
-  }
-  .content-home .section-home .content-vitrine-destaques .destaque:nth-child(2) .informacoes-destaque .box-title-subtitle .subtitle-destaque, .content-home .section-home .content-vitrine-destaques .destaque:nth-child(3) .informacoes-destaque .box-title-subtitle .subtitle-destaque, .content-home .section-home .content-vitrine-destaques .destaque:nth-child(4) .informacoes-destaque .box-title-subtitle .subtitle-destaque {
-    display: none;
   }
   .content-home .section-home .content-vitrine-destaques .destaque-1 {
     grid-column: inicio-left/fim-destaque1;

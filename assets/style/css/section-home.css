@@ -239,7 +239,7 @@
   grid-row: inicio-content-widgets/fim-content-widgets;
 }
 
-@media screen and (min-width: 520px) {
+@media screen and (min-width: 580px) {
   .content-home .section-home {
     grid-template-rows: [inicio-content-vitrine-destaques] auto [fim-content-vitrine-destaques] 40px [inicio-content-slider-principal] 150px [fim-slider-principal] 10px [inicio-content-noticias] 100px [fim-content-noticias] 10px [inicio-content-widgets] 100px [fim-content-widgets] 10px;
   }
@@ -250,24 +250,6 @@
     grid-template-columns: [inicio-left] 12px [inicio-temp] 1fr repeat(8, 10px 1fr) [fim-destaque1] 3px [inicio-destaques2-3] 1fr repeat(3, 10px 1fr) [fim-destaque3] 3px [inicio-destaque4] 1fr repeat(3, 10px 1fr) [fim-temp] 12px [fim-rigth];
     grid-template-rows: [inicio-destaques1-2] 190px [fim-destaque2] 3px [inicio-destaques3-4] 190px [fim-destaques1-3-4];
     margin-top: 50px;
-  }
-  .content-home .section-home .content-vitrine-destaques .destaque:first-child .informacoes-destaque {
-    justify-content: flex-start;
-  }
-  .content-home .section-home .content-vitrine-destaques .destaque:first-child .informacoes-destaque .box-title-subtitle {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    border-left: none;
-  }
-  .content-home .section-home .content-vitrine-destaques .destaque:first-child .informacoes-destaque .box-title-subtitle .titulo-destaque {
-    font-size: 1.8em;
-  }
-  .content-home .section-home .content-vitrine-destaques .destaque .informacoes-destaque {
-    padding: 0 0 4% 4%;
-  }
-  .content-home .section-home .content-vitrine-destaques .destaque:nth-child(2) .informacoes-destaque .box-title-subtitle .subtitle-destaque, .content-home .section-home .content-vitrine-destaques .destaque:nth-child(3) .informacoes-destaque .box-title-subtitle .subtitle-destaque, .content-home .section-home .content-vitrine-destaques .destaque:nth-child(4) .informacoes-destaque .box-title-subtitle .subtitle-destaque {
-    display: none;
   }
   .content-home .section-home .content-vitrine-destaques .destaque-1 {
     grid-column: inicio-left/fim-destaque1;

@@ -184,6 +184,11 @@
   transition: 0.3s;
 }
 
+@media screen and (min-width: 920px) {
+  .container-cabecalho {
+    padding: 0 6%;
+  }
+}
 @media screen and (min-width: 990px) {
   .cabecalho-branco .content-logo-btn-menu .content-menu .menu-principal .ul-items-menu li.item a {
     color: #3c4e64;
@@ -248,6 +253,11 @@
     color: #333;
     background-color: transparent;
     text-decoration: underline;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .container-cabecalho {
+    padding: 0 13%;
   }
 }
 
