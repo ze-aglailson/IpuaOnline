@@ -2,12 +2,12 @@ window.addEventListener('load', function(){
     const slider = document.querySelector('.slider')
 
     slides = Array.from(document.querySelectorAll('.slide'))
-
+    console.log(slides)
     let isDragging = false,
         startPos = 0,
         currentTranslate = 0,
         prevTranslate = 0,
-        animationID = 0,
+        animationID = 0
         currentIndex = 0
 
     slides.forEach((slide, index)=>{
@@ -30,11 +30,11 @@ window.addEventListener('load', function(){
 
     //Functions
     /*Desativa o menu do botão direito em cima do banner*/
-    window.oncontextmenu = function(event){
+/*     window.oncontextmenu = function(event){
         event.preventDefault()
         event.stopPropagation()
         return false
-    }
+    } */
 
     function touchStart(index){
 
