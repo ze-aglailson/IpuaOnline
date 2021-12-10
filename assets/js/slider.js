@@ -103,7 +103,7 @@ window.addEventListener('load', function(){
 
     //Seta o proximo slide ??
     function setPositionByIndex(){
-        currentTranslate = currentIndex * -window.innerWidth
+        currentTranslate = currentIndex * -slider.clientWidth
         prevTranslate = currentTranslate
         setSliderPosition()
     }
