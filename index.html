@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/style/css/includes.css">
+        <!-- Librarias -->
+        <link rel="stylesheet" href="assets/lib/owlCarousel/dist/assets/owl.carousel.min.css">
+        <link rel="stylesheet" href="assets/lib/owlCarousel/dist/assets/owl.theme.default.min.css">
     <script src="assets/js/cabecalho.js"></script>
     <script src="assets/js/main.js"></script>
     <script src="assets/js/slider.js"></script>
@@ -170,9 +173,9 @@
                         </div>
                     </div>
 
-                    <div class="slider">
+                    <div class="slider owl-carousel owl-theme">
 
-                        <div class="slide">
+                        <div class="item slide">
                             <a href="#" class="link-slide"></a>
                             <div class="background-slide" style="background-image: url('uploads/banners/home-principal/banner-1.jpg');">
 
@@ -184,7 +187,7 @@
                             </div>
                         </div>
 
-                        <div class="slide">
+                        <div class="item slide">
                             <a href="#" class="link-slide"></a>
                             <div class="background-slide" style="background-image: url('uploads/banners/home-principal/banner-2.jpg');">
 
@@ -196,7 +199,7 @@
                             </div>
                         </div>
 
-                        <div class="slide">
+                        <div class="item slide">
                             <a href="#" class="link-slide"></a>
                             <div class="background-slide" style="background-image: url('uploads/banners/home-principal/banner-1.jpg');">
 
@@ -209,9 +212,6 @@
                         </div>
 
                     </div>
-
-                    <div class="navegacao-slider"></div>
-
                 </div>
 
                 <div class="content content-noticias">
@@ -256,6 +256,24 @@
     <footer>
         <p>Todos os direitos reservado - Ipuã Online &copy;</p>
     </footer>
+        <!-- jquery -->
+        <script src="assets/lib/jquery/jquery-3.6.0.min.js"></script>
+        <!-- OwlCarousel -->
+        <script src="assets/lib/owlCarousel/dist/owl.carousel.min.js"></script>
     
+        <script type="text/javascript">
+            $(document).ready(function(){
+    
+                $(".owl-carousel").owlCarousel({
+                    items:1,
+                    loop:true,
+                    dots:false,
+                    autoplay:true,
+                    autoplayTimeout:4500,
+
+                });
+    
+            })
+        </script>
 </body>
 </html>
