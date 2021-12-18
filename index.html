@@ -13,7 +13,6 @@
         <link rel="stylesheet" href="assets/lib/owlCarousel/dist/assets/owl.theme.default.min.css">
     <script src="assets/js/cabecalho.js"></script>
     <script src="assets/js/main.js"></script>
-    <script src="assets/js/slider.js"></script>
     <link rel="shortcut icon" href="assets/img/sistema/favicon.png" type="image/x-icon">
 </head>
 <body>
@@ -173,7 +172,7 @@
                         </div>
                     </div>
 
-                    <div class="slider owl-carousel owl-theme">
+                    <div class="slider owl-carousel owl-theme" id="slider-principal">
 
                         <div class="item slide">
                             <a href="#" class="link-slide"></a>
@@ -261,19 +260,6 @@
         <!-- OwlCarousel -->
         <script src="assets/lib/owlCarousel/dist/owl.carousel.min.js"></script>
     
-        <script type="text/javascript">
-            $(document).ready(function(){
-    
-                $(".owl-carousel").owlCarousel({
-                    items:1,
-                    loop:true,
-                    dots:false,
-                    autoplay:true,
-                    autoplayTimeout:4500,
-
-                });
-    
-            })
-        </script>
+        <script src="assets/js/slider.js"></script>
 </body>
 </html>
