@@ -509,6 +509,7 @@ body {
   display: flex;
   flex-direction: column;
   overflow: hidden;
+  /* Slide wolcarousel */
 }
 .content-home .section-home .content-slider-principal .box-header-slider {
   width: 100%;
