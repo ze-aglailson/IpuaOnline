@@ -7,7 +7,14 @@ $(document).ready(function(){
         dots:false,
         autoplay:true,
         autoplayTimeout:4500,
+        margin:1
+    });
 
+    $("#slider-eventos").owlCarousel({
+        items:2,
+        loop:true,
+        dots:false,
+        margin:5
     });
 
 })

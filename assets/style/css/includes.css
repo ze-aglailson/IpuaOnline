@@ -388,7 +388,7 @@ body {
   grid-row: inicio-content-home/fim-content-home;
   display: grid;
   grid-template-columns: [inicio-left] 12px [inicio-temp] 1fr repeat(12, 10px 1fr) [fim-temp] 12px [fim-rigth];
-  grid-template-rows: [inicio-content-vitrine-destaques] auto [fim-content-vitrine-destaques] 10px [inicio-content-slider-principal] auto [fim-slider-principal] 10px [inicio-content-noticias] 100px [fim-content-noticias] 10px [inicio-content-widgets] 100px [fim-content-widgets] 10px;
+  grid-template-rows: [inicio-content-vitrine-destaques] auto [fim-content-vitrine-destaques] 10px [inicio-content-slider-principal] auto [fim-slider-principal] 10px [inicio-content-noticias] 100px [fim-content-noticias] 10px [inicio-content-widgets] auto [fim-content-widgets] 10px;
 }
 .content-home .section-home .content {
   background-color: #333;
@@ -567,7 +567,7 @@ body {
   display: flex;
 }
 .content-home .section-home .content-slider-principal .slider .slide {
-  height: 195px;
+  height: 170px;
   position: relative;
 }
 .content-home .section-home .content-slider-principal .slider .slide .background-slide {
@@ -619,6 +619,35 @@ body {
 .content-home .section-home .content-widgets {
   grid-column: inicio-left/fim-rigth;
   grid-row: inicio-content-widgets/fim-content-widgets;
+  background-color: #FFF;
+}
+.content-home .section-home .content-widgets .widget {
+  padding: 15px 10px;
+}
+.content-home .section-home .content-widgets .widget .box-title-widget {
+  margin-bottom: 20px;
+}
+.content-home .section-home .content-widgets .widget .box-title-widget .title-widget {
+  font-size: 0.9em;
+  color: #2e5678;
+  text-align: center;
+}
+.content-home .section-home .content-widgets .widget-eventos {
+  display: flex;
+  flex-direction: column;
+}
+.content-home .section-home .content-widgets .widget-eventos .lista-eventos .evento {
+  height: 200px;
+  background-color: #333;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.content-home .section-home .content-widgets .widget-eventos .lista-eventos .evento:hover {
+  cursor: grabbing;
 }
 
 @media screen and (min-width: 460px) {
